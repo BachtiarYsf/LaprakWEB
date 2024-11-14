@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum 2</title>
+    <link href="aset/style.css " rel="stylesheet" type="text/css"> 
+    <link rel="stylesheet" href="aset/css/bootstrap.css">
+</head>
+<body>
+    <header>
+        <h1>Laporan Teori</h1>
+        <h2>Bachtiar Yusuf || 202331096</h2>
+        <button class="switch" onclick="berubah()">CHANGE</button>
+    </header>
+    <div class="soal">
+        <ol>
+            <li>
+                <h3 onclick="sembunyi()"><b>Penggunaan HTML, CSS, JavaScript dalam Pemrograman Web</b></h3>
+                    <ol class="hilang" id="hil">
+                        <li onclick="html()"><b>Html</b></li>
+                        <p class="html" id="htm">
+                            Html digunakan dalam pemrograman web karena kita dapat membuat web sesuai dengan keinginan kita 
+                            sendiri dengan tag tag yang telah disediakan, html juga dapat membantu menampilkan gambar <|src|> 
+                            dan link website <|a herf|>. Html juga dapat digunakan untuk membuat layout 
+                            menggunakan tabel <|table|>. Hal lain seperti memberikan daftar isi menggunakan <|ol|><|li|>.
+                        </p>
+                        <li onclick="css()"><b>Css</b></li>
+                        <p class="css" id="cs">
+                            Css digunakan dalam pemrograman web yaitu sebagai tampilan web agar lebih menarik, 
+                            css digunakan untuk memberikan model warna “bg-color, color-font”, pemberian jarak  
+                            tepi pada web “padding” dan tata letak. Dalam hal ini css juga dapat membantu dalam  
+                            menyesauikan layar  (viewpoint) sesaui dengan perangkat yang digunakan users
+                        </p>
+                        <li onclick="js()"><b>Javascript</b></li>
+                        <p class="java" id="js">
+                            Dalam hal pemrograman web yang telah dipelajari javascript digunakan dalam membantu penggunaan 
+                            popup peringatan dan juga dapat digunakan dalam membantu dalam penggunaan hidden teks hal ini 
+                            membantu agar web jauh lebih interaktif untuk user. Dan dapat memanipulasi konten HTML suatu 
+                            elemen “innerHTML”
+                        </p>
+                    </ol>
+            </li>
+            <br>
+            <li>
+                <h3 onclick="simpan()"><b>Integrasi antara Html, Css, dan Javascript dalam Pemrograman Web</b></h3>
+                <p class="soal2" id="soal">
+                    Anggap saja html adalah sebuah bodi mobil, css sebagai cat dan interior pada mobil, maka javascript adalah 
+                    sistem pada mobil. Ketiganya saling melengkapi dalam pembuatan sebuah web. Html adalah bagian paling dasar 
+                    dan berguna untuk membentuk struktur dalam pembuatan web. Css adalah bagian untuk memberikan dan mengatur 
+                    tampilan yang menarik pada web. Java script adalah bagian yang membantu agar web lebih intraktif. Dapat 
+                    kita contohkan dalam pembuatan form, html berfungsi sebagai pembuat formnya, css membantu dalam memberikan 
+                    desain bentuk form, dan javascript membantu memberikan alert ketika menekan tombol form.
+                </p>
+            </li>
+        </ol>    
+
+    </div>
+    <script src="aset/js/bootstrap.js"></script>
+    <script src="aset/java.js"></script>
+</body>
+</html>
