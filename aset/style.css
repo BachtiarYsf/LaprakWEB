@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0%;
+}
+.soal{
+    padding: 1cm;
+}
+
+body.putih{
+    background-color: aliceblue;
+    color: black;
+
+    header{
+        padding-top: 40px;
+        background-color: #4ca9c8;
+        padding-bottom: 40px;
+    }
+    .switch{
+        float: right;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: gray;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+    p{
+        text-align: justify;
+        padding: 15px;
+        background-color: rgb(27, 132, 144);
+        border-radius: 0.3cm;
+        color: whitesmoke;  
+    }
+}
+
+body.hitam{
+    background-color: gray;
+    color: whitesmoke;
+
+    header{
+        padding-top: 40px;
+        background-color: #333333;
+        padding-bottom: 40px;
+    }
+
+    .switch{
+        float: right;
+        position: relative;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: aliceblue;
+        color: black;
+        cursor: pointer;
+        
+    }
+
+    p{
+    text-align: justify;
+    padding: 15px;
+    background-color: wheat;
+    border-radius: 0.3cm;
+    color: black; 
+    }
+    
+}
+
+body h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+body h2{
+    text-align: center;
+}
+
+li{
+    font-size: 15px;
+}
+
+.html, .css, .java, .hilang, .soal2{
+    display: none;
+}
+
+.list, h3{
+    cursor: pointer;
+    border: 1px solid red;
+    width: fit-content;
+}
