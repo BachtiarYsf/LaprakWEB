@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <div class="continer">
+
+        <div class="sidebar">
+            <a href="index.html" class="mb-2">Bachtiar Yusuf</a>
+            <a href="soalA.html" class="mb-2">Soal A</a>
+            <a href="soalB.html" class="mb-2">Soal B</a>
+            <a href="soalC.html" class="mb-2">Soal C</a>
+        </div>
+        
+        <div class="content-home">
+            <h1>LAPORAN TEORI</h1>
+            <h2>Bachtiar Yusuf ||| 202331096</h2>
+
+            <div class="soal">
+                <ol type="A" start="3">
+                    <li>
+                        <h6 onclick="sembunyi()" class="pertanyaan"><b>Penggunaan include, require, dan koneksi PHP dengan MySQL</b></h6>
+                        <ol class="hilang" id="hil" type="a">
+                            <li onclick="bagianA()" class="list"><b>Jelaskan fungsi include dan require dalam PHP, termasuk perbedaan mendasar antara keduanya.</b></li>
+                            <ul class="bagA" id="A">
+                                <li>
+                                    <b>Include</b> : metode yang akan tetap mengeksekusi baris kode selanjutnya ketika file yang diload ternyata tidak ada. 
+                                </li>
+                                <li>
+                                    <b>Require</b> :  metode ini tidak akan melanjutkan pengeksekusian kode program berikutnya ketika file yang di load ternyata tidak ada.
+                                </li>
+                                <li>
+                                    <b>Connect</b> :  metode ini tidak akan melanjutkan pengeksekusian kode program berikutnya ketika file yang di load ternyata tidak ada.
+                                </li>
+                                <li>
+                                    <b>Perbedaan</b>
+                                    <ol type="i">
+                                        <li><b>Include</b> : Akan memunculkan peringatan (E_WARNING) dan skrip akan dilanjutkan.</li>
+                                        <li><b>Require</b> : Akan memunculkan kesalahan fatal (E_COMPILE_ERROR) dan menghentikan skrip.</li>
+                                        <li><b>Connect</b> : mengubah ekstensi file PHP eksternal dan menghubungkannya ke HTML.</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <li onclick="bagianB()" class="list"><b>Sebutkan keunggulan PHP dibandingkan dengan bahasa pemrograman lainnya dalam konteks pemgembangan web</b></li>
+                                <p class="bagB" id="B">
+                                    <|?php
+                                    <br>
+                                        $servername = 'localhost';
+                                        <br>
+                                        $username = 'root';
+                                        <br>
+                                        $password ='';
+                                        <br>
+                                        $db_name = '202331096_bachtiaryusuf';
+                                        <br><br>
+
+                                        //create connection
+                                        <br>
+                                        $conn = new mysqli($servername, $username, $password, $db_name);
+                                        <br>
+                                        //check connection
+                                        <br>
+                                        if($conn->connect_error){
+                                        <br>
+                                            die('connection failed: ' .$conn->connect_error);
+                                            <br>
+                                        }
+                                        <br>
+                                    ?|>
+                                    <br><br>
+                                    ini adalah contoh cara menyambungkan database MySQL dengan PHP
+                                </p>
+                            <li onclick="bagianC()" class="list"><b>Mengapa penggunaan include dan require penting dalam pengolahan kode program yang besar dan kompleks</b></li>
+                            <p class="bagC" id="C">
+                                Karena didalam perusahan yang sudah besar, semakin banyak fungsi yang akan kita panggil dan akan di 
+                                tampilakan berkali kali di berbagai web, dibandingkan memanggil fungsi secara berulang ulang, kita 
+                                hanya perlu mendefinisikannya sekali saja, untuk kemudian memanggilnya dari berbagai tempat dari 
+                                file yang berbeda beda. 
+                            </p>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="asset/java.js"></script>
+</body>
+</html>

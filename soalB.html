@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <div class="continer">
+
+        <div class="sidebar">
+            <a href="index.html" class="mb-2">Bachtiar Yusuf</a>
+            <a href="soalA.html" class="mb-2">Soal A</a>
+            <a href="soalB.html" class="mb-2">Soal B</a>
+            <a href="soalC.html" class="mb-2">Soal C</a>
+        </div>
+        
+        <div class="content-home">
+            <h1>LAPORAN TEORI</h1>
+            <h2>Bachtiar Yusuf ||| 202331096</h2>
+
+            <div class="soal">
+                <ol type="A" start="2">
+                    <li>
+                        <h6 onclick="sembunyi()" class="pertanyaan"><b>Perbandingan GET dan POST</b></h6>
+                        <ol class="hilang" id="hil" type="a">
+                            <li onclick="bagianA()" class="list"><b>Jelaskan perbedaan antara metode GET dan POST dalam penggunaan disebuah website.</b></li>
+                            <ul class="bagA" id="A">
+                                <li>
+                                    <b>GET</b> : digunakan untuk mendapatkan data dari server tanpa harus mengirimkan data tambahan. 
+                                    Ini berarti ketika kita menggunakan tautan untuk emmbuka sebuah halaman, metode get akan digunakan 
+                                    secara otomatis, karena kita tidak mengirimkan informasi tambahan ke server. 
+                                </li>
+                                <li>
+                                    <b>POST</b> : digunakan untuk mengirim data ke server secara tersembunyi. Hal ini memastikan agar 
+                                    data yang dikirmkan aman dan tidak tersesat ketika dikirimkan ke server.
+                                </li>
+                            </ul>
+                            <li onclick="bagianB()" class="list"><b>Berikan contoh kasus penggunaan yang tepat untuk masing masing metode. </b></li>
+                                <ul class="bagB" id="B">
+                                    <li>
+                                        <b>GET</b> : dikarnakan data yang dikirmkan akan ditampilkan di halaman web, penggunaan GET 
+                                        sangat cocok untuk informasi yang tidak sensitif seperti misalnya infromasi terkait berita viral.
+                                    </li>
+                                    <li>
+                                        <b>POST</b> : penggunaannya ketika kita ingin mengirinkan data dari form suatu website ke server. 
+                                        Data yang dikirmkan menggunakan metode ost sangat terenkripsi dan tidak bisa ditangkap oleh pengguna 
+                                        lain. Metode ini digunakan untuk transaksi e-commerce atau pengiriman data sensitif lainnya
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="asset/java.js"></script>
+</body>
+</html>

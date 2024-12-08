@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Sidebar Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <div class="continer">
+
+        <div class="sidebar">
+            <a href="index.html" class="mb-2">Bachtiar Yusuf</a>
+            <a href="soalA.html" class="mb-2">Soal A</a>
+            <a href="soalB.html" class="mb-2">Soal B</a>
+            <a href="soalC.html" class="mb-2">Soal C</a>
+        </div>
+        
+        <div class="content-home">
+            <h1>LAPORAN TEORI</h1>
+            <h2>Bachtiar Yusuf ||| 202331096</h2>
+
+            <div class="soal">
+                <ol type="A">
+                    <li>
+                        <h6 onclick="sembunyi()" class="pertanyaan"><b>Jelaskan apa itu PHP</b></h6>
+                        <ol class="hilang" id="hil" type="a">
+                            <li onclick="bagianA()" class="list"><b>Pengertian</b></li>
+                            <p class="bagA" id="A">
+                                PHP (Hypertext Preprocessor) adalah bahasa pemrograman open-source yang umumnya 
+                                digunakan untuk membangun aplikasi web dinamis dan intraktif. Fungsinya berkaitan 
+                                dengan kinerja server dan kelancaran sebuah website. Bahasa PHP sendiri tersedia 
+                                pada beberapa sistem operasi seperti linux, windows, macOS. Kita dapat memungkinkan 
+                                untuk menyisipkan kode PHP di dalam dokumen HTML dan dapat menghasilkan halaman wab 
+                                yang dihasilkan secara dinamis.
+                            </p>
+                            <li onclick="bagianB()" class="list"><b>Sebutkan keunggulan PHP dibandingkan dengan bahasa pemrograman lainnya dalam konteks pemgembangan web</b></li>
+                                <ul class="bagB" id="B">
+                                    <li>
+                                        <b>Mudah Dipelajari</b> : PHP tidak terlalu sulit untuk di pelajari dari bahasa 
+                                        lainnya, dan dapat dilakukan modifikasi beberapa bagian HTML dengan mudah oleh 
+                                        pemula. Dan PHP tidak jauh berbeda dengan HTML yang relatif sederhana. 
+                                    </li>
+                                    <li>
+                                        <b>Open Source</b> : sumber dari kode dapat diakses oleh siapa pun secara gratis, 
+                                        dan para pengembang dapat memodifikasi sesuai dengan kebutuhan.
+                                    </li>
+                                    <li>
+                                        <b>Kemudahan Integrasi</b> : PHP terhubung dengan berbagai jenis basis data seperti 
+                                        MySQL, PostgreSQL, SQLite, dan semacanya. Selain itu  PHP dapat dijalankan dari  
+                                        berbagai OS Komputer seperti Linux, Windows, dan mecOS. Serta PHP memeiliki penyedia 
+                                        layanan web server yang bisa digunakan yaitu, Apache, Nginx, dan IIS.
+                                    </li>
+                                    <li>
+                                        <b>Tingkat Keamanan yang Tinggi</b> : dalam hal ini user tidak dapat melihat penulisan 
+                                        dari kode web secara langsung dikarnakan file PHP terismpan didalam serer database. 
+                                        Terdapat pula teknik hashing yang digunakan untuk menyamarkan password dalam basis data.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        
+    </div>
+    <script src="asset/java.js"></script>
+</body>
+</html>
